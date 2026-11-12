@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>光阴 · 时光格子 — 支持与介绍</title>
+<meta name="description" content="光阴 · 时光格子：把你的生命画成 900 格，每一格都是一轮满月升起。数据仅存本机，不联网、不收集。">
+<style>
+  :root { color-scheme: dark; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+    background: #14120f; color: #d8d3cc; line-height: 1.75;
+    max-width: 640px; margin: 0 auto; padding: 0 24px 64px;
+  }
+  header { text-align: center; padding: 56px 0 32px; }
+  .grid-motif { display: grid; grid-template-columns: repeat(5, 14px); gap: 5px; justify-content: center; margin-bottom: 24px; }
+  .cell { width: 14px; height: 14px; border-radius: 3px; background: #3a352e; }
+  .cell.lit { background: #e8863a; }
+  .cell.breath { background: #e8863a; animation: breath 2.4s ease-in-out infinite; }
+  @keyframes breath { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .cell.breath { animation: none; opacity: 1; } }
+  h1 { font-size: 28px; color: #f5f1ea; font-weight: 600; letter-spacing: 2px; }
+  .tagline { margin-top: 12px; color: #9a938a; font-size: 15px; }
+  h2 { font-size: 19px; color: #f5f1ea; margin: 48px 0 16px; font-weight: 600; }
+  p { margin-bottom: 14px; font-size: 15px; }
+  .feature { margin-bottom: 20px; padding-left: 16px; border-left: 2px solid #e8863a; }
+  .feature strong { color: #f5f1ea; display: block; margin-bottom: 4px; }
+  .feature span { color: #a39c92; font-size: 14px; }
+  .faq-item { margin-bottom: 22px; }
+  .faq-item h3 { font-size: 15px; color: #f5f1ea; font-weight: 600; margin-bottom: 6px; }
+  .faq-item p { color: #a39c92; font-size: 14px; margin: 0; }
+  .contact { background: #1e1b17; border-radius: 12px; padding: 20px 24px; }
+  .contact a { color: #e8863a; text-decoration: none; }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid #2a2722; text-align: center; font-size: 13px; }
+  footer a { color: #8a8378; text-decoration: none; }
+  footer a:hover { color: #e8863a; }
+</style>
+</head>
+<body>
+<header>
+  <div class="grid-motif" aria-hidden="true">
+    <div class="cell lit"></div><div class="cell lit"></div><div class="cell lit"></div><div class="cell lit"></div><div class="cell lit"></div>
+    <div class="cell lit"></div><div class="cell lit"></div><div class="cell lit"></div><div class="cell lit"></div><div class="cell lit"></div>
+    <div class="cell lit"></div><div class="cell lit"></div><div class="cell lit"></div><div class="cell lit"></div><div class="cell lit"></div>
+    <div class="cell lit"></div><div class="cell lit"></div><div class="cell breath"></div><div class="cell"></div><div class="cell"></div>
+    <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+  </div>
+  <h1>光阴 · 时光格子</h1>
+  <p class="tagline">一个人只拥有此生此世是不够的，他还应把日子一格一格亲手点亮。</p>
+</header>
+
+<h2>关于</h2>
+<p>光阴把你的生命画成 900 个格子——每个格子是一轮满月升起。设定生日那一刻，已走过的格子被点亮；橙色的呼吸格，是正在升起的这一轮。</p>
+
+<h2>功能</h2>
+<div class="feature"><strong>生命格子</strong><span>以月为单位点亮已度过的人生，一眼看清来路与余量。</span></div>
+<div class="feature"><strong>月度仪式</strong><span>每月一次，30 秒，点亮一格，为这个月留一句话。</span></div>
+<div class="feature"><strong>心愿与瞬间</strong><span>记录你想实现的事，和你认真度过的时刻。</span></div>
+<div class="feature"><strong>仅存本机</strong><span>所有数据只保存在你自己的 iPhone 上，不联网、不收集任何信息。</span></div>
+
+<h2>常见问题</h2>
+<div class="faq-item"><h3>我的数据存在哪里？</h3><p>全部在你自己的 iPhone 上。本 App 不联网、不上传任何数据；卸载 App 即删除全部数据。</p></div>
+<div class="faq-item"><h3>格子是怎么算的？</h3><p>用你的出生日期和默认 75 年寿命（可在设置中调整，40–100 年），把已过的人生按月点亮成格子。这只是提醒工具，不是预测。</p></div>
+<div class="faq-item"><h3>通知不响？</h3><p>去 系统设置 → 光阴 → 通知，确认允许通知。该权限仅用于你主动开启的月度提醒。</p></div>
+<div class="faq-item"><h3>照片会读取我的相册吗？</h3><p>不会。只有你在「时刻」或更换头像时主动选中的照片才会被复制进 App 本地目录，App 无法浏览你的其他照片。</p></div>
+<div class="faq-item"><h3>App 锁是怎么工作的？</h3><p>App 锁使用面容 ID / 触控 ID 或设备密码（系统本地认证），不设独立密码，无需记忆额外密码。</p></div>
+<div class="faq-item"><h3>如何彻底删除我的数据？</h3><p>卸载 App，或 App 内逐条删除心愿、时刻、个人资料。数据不离开本机，删除即彻底。</p></div>
+
+<h2>联系我们</h2>
+<div class="contact">
+  <p>问题反馈、建议或数据相关请求：</p>
+  <p><a href="mailto:zhoulisjtu@gmail.com">zhoulisjtu@gmail.com</a></p>
+</div>
+
+<footer>
+  <p><a href="./privacy.html">隐私政策</a> · 光阴 · 时光格子</p>
+</footer>
+</body>
+</html>
